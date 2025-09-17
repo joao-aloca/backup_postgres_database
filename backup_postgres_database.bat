@@ -54,7 +54,7 @@
     @REM pg_dump -h %host% -p %port% -U %user% -d %database% -w -v -F c -f "%backup_path%\%backup_file_name%.dmp"
 
     :: Geração do arquivo de backup no formato custom com extensão .backup
-	pg_dump -h %host% -p %port% -U %user% -d %database% -w -v -F c -f "%backup_path%\%backup_file_name%.backup"
+	pg_dump -h %host% -p %port% -U %user% -d %database% -v -F c -f "%backup_path%\%backup_file_name%.backup"
 ::
 
-pause
+:: pause
